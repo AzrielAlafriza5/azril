@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: white;
+color: rgb(14, 14, 14); /* agar teks tetap terlihat di background hitam */
+}
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* NAVBAR */
+  nav {
+    background-color: #0d0d0d00;
+    padding: 10px 20px;
+  }
+
+  .navbar {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar li {
+    position: relative;
+  }
+
+  .navbar a {
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    display: block;
+  }
+
+  /* DROPDOWN */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    top: 40px;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .navbar li:hover .dropdown-content {
+    display: block;
+  }
+
+  /* KONTEN UTAMA */
+  .container {
+    padding: 20px;
+  }
+
+  .profil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .profil img {
+  transition: transform 0.6s ease;
+}
+
+.profil img:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+
+  .foto-saya {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #B3B3B3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .row {
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .box {
+    flex: 1;
+    min-width: 150px;
+    padding: 20px;
+    background-color: hsla(202, 13%, 66%, 0.947);
+    border-radius: 8px;
+   background-color: #a8b3b8ca;
+   border: 1px solid #ccc;
+   border-radius: 6%;
+   padding: 1em;
+   text-align: center;
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+   cursor: pointer;
+}
+
+.opini-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.opini-box:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+  }
+  .hr {
+    background-color: #E50914;
+  }
+  .foto-lagi {
+    background-color: #d0e6ff05;
+    height: 100%;
+    width: 100% ;
+    object-fit: cover;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  .opini-section {
+    padding: 2em;
+  }
+
+  .opini-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+  }
+
+  .opini-box {
+    background-color: #a8b3b8ca;
+    border: 1px solid #ccc;
+    border-radius: 6%;
+    padding: 1em;
+    text-align: center;
+  }
+  .opini-box {
+  background-color: #a8b3b8ca;
+  border: 1px solid #ccc;
+  border-radius: 6%;
+  padding: 1em;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.opini-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.opini-box:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+  .opini-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .opini-box p {
+    margin-top: 0.5em;
+    font-weight: bold;
+  }
+
+  .suggestion-map-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .suggestion-box, .map-box {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ddd;
+    border-radius: 8px;
+    padding: 1em;
+  }
+
+  .suggestion-box h2, .map-box h2 {
+    text-align: center;
+  }
+
+  .suggestion-box textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 1em;
+    padding: 0.5em;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    resize: vertical;
+  }
+
+  .suggestion-box button {
+    margin-top: 1em;
+    padding: 0.7em 1.5em;
+    border: none;
+    background-color: #292929;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .suggestion-box button:hover {
+    background-color: #555;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    border: 1px solid#0f1010ca;
+    padding: 10px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #a8b3b8ca;
+  }
+
+  footer {
+    text-align: center;
+    background-color: #0b0b0b;
+    color: white;
+    padding: 10px;
+    margin-top: 40px;
+  }
+
+  /* Responsive Styles */
+@media (max-width: 1024px) {
+    /* Tablet */
+    .navbar {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .profil {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  
+    .opini-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .suggestion-map-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    /* Mobile */
+    nav {
+      padding: 10px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    .foto-saya {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .opini-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .suggestion-box, .map-box {
+      min-width: 100%;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  
+    th, td {
+      padding: 8px;
+    }
+  }
+  .suggestion-map-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2em;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.suggestion-box, .map-box {
+  flex: 1;
+  min-width: 300px;
+  background-color: #ddd;
+  border-radius: 8px;
+  padding: 1em;
+}
+
+.suggestion-box h2, .map-box h2 {
+  text-align: center;
+}
+
+.suggestion-box textarea,
+.suggestion-box input {
+  width: 100%;
+  margin-top: 1em;
+  padding: 0.5em;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.suggestion-box button {
+  margin-top: 1em;
+  padding: 0.7em 1.5em;
+  border: none;
+  background-color: #292929;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.suggestion-box button:hover {
+  background-color: #555;
+}
